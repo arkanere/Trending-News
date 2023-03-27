@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top 10 Trending News in India</title>
+</head>
+<body>
+    <h1>Top 10 Trending News in India</h1>
+    <ul>
+        {% for article in articles %}
+        <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
